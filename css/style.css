@@ -1,0 +1,156 @@
+@font-face {
+    font-family: 'ralewaybold';
+    src: url('../fonts/raleway-bold-webfont.woff2') format('woff2'),
+         url('fonts/raleway-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'ralewaymedium';
+    src: url('../fonts/raleway-medium-webfont.woff2') format('woff2'),
+         url('raleway-medium-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'ralewayregular';
+    src: url('../fonts/raleway-regular-webfont.woff2') format('woff2'),
+         url('raleway-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+     font-family: 'ralewaymedium', sans-serif;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 1100px;
+    margin: 0 auto;
+}
+
+header, .bigSlider {
+    width: 100%;
+    background-color: #000; 
+    color: #FFF;
+    text-transform: uppercase;
+    height: auto;
+    letter-spacing: 1px;
+}
+
+header .text {
+    display: inline-block;
+    margin-top: 8px;
+    float: left;
+}
+
+
+header span:nth-child(2) {
+    color: #2ad3b5;
+    padding: 0 5px;
+}
+
+.menu {
+    float: right;
+    list-style: none;
+    font-size: 13px;    
+}
+
+ul {
+    margin-right: 20px;  
+}
+
+.menu li, a {
+    position: relative;
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+}
+
+.menu > li {
+    display: inline-block;   
+}
+
+.menu > li:hover ul {
+    display: block;   
+}
+
+.menu > li  {
+ font-family: "ralewaybold";/*niewiem dlaczego nie dziala, skoro szukam bezposrednich dzieci menu czyli li?*/ 
+}
+
+.submenu {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 40px; 
+    background: black;
+}
+
+.bigSlider {
+    padding-top: 50px;
+    padding-bottom: 30px;
+    background: rgba(249,249,249,1);
+    background: -moz-linear-gradient(top, rgba(249,249,249,1) 0%, rgba(249,249,249,0.96) 60%, rgba(210,209,217,0.94) 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(249,249,249,1)), color-stop(60%, rgba(249,249,249,0.96)), color-stop(100%, rgba(210,209,217,0.94)));
+    background: -webkit-linear-gradient(top, rgba(249,249,249,1) 0%, rgba(249,249,249,0.96) 60%, rgba(210,209,217,0.94) 100%);
+    background: -o-linear-gradient(top, rgba(249,249,249,1) 0%, rgba(249,249,249,0.96) 60%, rgba(210,209,217,0.94) 100%);
+    background: -ms-linear-gradient(top, rgba(249,249,249,1) 0%, rgba(249,249,249,0.96) 60%, rgba(210,209,217,0.94) 100%);
+    background: linear-gradient(to bottom, rgba(249,249,249,1) 0%, rgba(249,249,249,0.96) 60%, rgba(210,209,217,0.94) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f9f9f9', endColorstr='#d2d1d9', GradientType=0 );
+}
+
+.blackChair {
+    background-image: url(../images/black_chair.png);
+    background-repeat: no-repeat;
+    background-image: center;
+    height: 300px;
+    width: 400px;
+    margin-left: 130px;
+}
+.clearfix {
+    content: '';
+    clear: both;
+}  
+
+.bigSlider h1 {
+    font-size: 35px;
+    font-family: "ralewaybold";
+}
+
+.slider {
+    margin-top: 20px;
+    
+}
+.sliderText {
+    width: 100%;
+    text-align: center;
+    display: inline-block;
+    padding: 50px 30px 20px 30px;
+    margin-left: 450px;
+    color:black;
+}
+.sliderText p {
+    padding: 20px 0;
+    font-size: 12px;
+    line-height: 18px;
+    text-transform: capitalize;
+    
+    
+}
+.sliderText  h1 span {
+    color: #2ad3b5;
+}
+
+.sliderText .button {
+    
+    background-color: #2ad3b5 ;
+    border-radius: 6px;
+    width: 200px;
+    padding: 10px;
+    margin: auto;
+    color: #FFF;
+}
