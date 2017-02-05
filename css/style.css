@@ -75,9 +75,9 @@ ul {
     display: inline-block;   
 }
 
-.menu > li:hover ul {
+/*.menu > li:hover ul {
     display: block;   
-}
+}*/
 
 .submenu {
     display: none;
@@ -112,14 +112,26 @@ ul {
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f9f9f9', endColorstr='#d2d1d9', GradientType=0 );
 }
 
-.blackChair {
-    background-image: url(../images/black_chair.png);
+.chairs {
     background-repeat: no-repeat;
     background-image: center;
     height: 300px;
     width: 400px;
     margin-left: 130px;
 }
+
+.chairs ul {
+    list-style: none;
+}
+
+.chairs li {
+    display: none;   
+}
+
+.chairs .visible{
+    display: inline-block;  
+}
+
 .clearfix {
     content: '';
     clear: both;
@@ -195,12 +207,14 @@ ul {
 }
 
 .sliderText {
-    width: 100%;
+    width: 40%;
     text-align: center;
     display: inline-block;
-    padding: 50px 30px 20px 30px;
-    margin-left: 450px;
-    color:black;
+    padding: 0 30px 20px 0;
+    color: black;
+    margin-top: 50px;
+    margin-right: 280px;
+    float: right;
 }
 
 .sliderText p {
@@ -268,6 +282,7 @@ ul {
     margin-top: 140px;
     padding-top: 20px;
     padding-left: 20px;
+    display: block;
 }
 
 .boxTitle {
